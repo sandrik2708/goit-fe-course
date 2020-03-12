@@ -1,0 +1,65 @@
+body {
+    margin: auto;
+    width: 1200px;
+    height: 2080px;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(98, 98, 98);
+    text-align: center;
+}
+
+header {
+padding: 54px 0px;
+}
+
+ul { 
+list-style: none;
+text-transform: uppercase;
+}
+
+li {
+    display: inline-block;
+    padding: 0px 60px;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(98, 98, 98);
+}
+
+a:hover {
+color: rgb(3, 169, 244);
+}
+
+.box {
+    display: inline-block;
+    padding: 30px 30px 74px;
+    width: 420px;
+    height: 470px;
+    text-align: left;
+}
+
+.title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+button {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 16px 55px;
+    border-color:  rgb(98, 98, 98);
+    /* border: 1px; */
+    background-color: rgb(256, 256, 256);
+}
