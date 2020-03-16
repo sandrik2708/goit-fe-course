@@ -6,14 +6,12 @@
     color: rgb(98, 98, 98);
     text-align: center;
 }
-.head {
-padding: 54px 0 54px;
-}
+
 .list { 
     margin: 0;
     padding: 0;
-list-style: none;
-text-transform: uppercase;
+    list-style: none;
+    text-transform: uppercase;
 }
 
 .list-item {
@@ -25,6 +23,7 @@ text-transform: uppercase;
     text-decoration: none;
     color: rgb(98, 98, 98);
     padding: 54px 0px;
+    display: block;
 }
 
 a:hover {
@@ -34,7 +33,7 @@ color: rgb(3, 169, 244);
     width: 1200px;
     margin: 0 auto;
     font-size: 0;
-    
+    padding-bottom: 70px;
 }
 .box {
     display: inline-block;
@@ -78,8 +77,8 @@ color: rgb(3, 169, 244);
        display: block;
        text-align: center;
        margin: 0 auto; 
-       margin-bottom: 70px;
-}
+ 
+    }
 .click:hover {
     background: rgb(98,98,98);
 
