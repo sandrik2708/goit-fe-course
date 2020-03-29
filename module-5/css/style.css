@@ -69,7 +69,7 @@ box-sizing: inherit;
     height: auto;
 }
 .slide {
-    background-image: url(/img/slide/slide.jpg);
+    background-image: url(../img/slide/slide.jpg);
     margin: 0 auto;
     min-height: 600px;
     width: 100%;
@@ -118,12 +118,12 @@ box-sizing: inherit;
     transform: translateY(50%);
 }
 .btn-left {
-    background: url(/img/arrows/arrow-left.png) 50% 50% no-repeat;
+    background: url(../img/arrows/arrow-left.png) 50% 50% no-repeat;
     background-color: rgba(26, 188, 156, 0.7);
     left: 245px;
 }
 .btn-right {
-    background: url(/img/arrows/arrow-right.png) 50% 50% no-repeat;
+    background: url(../img/arrows/arrow-right.png) 50% 50% no-repeat;
     background-color: rgba(26, 188, 156, 0.7);
     right: 245px;
 }
@@ -240,16 +240,16 @@ background-color: rgb(26, 188, 156);
       height: 50px;
 }
 .icon-heart {
-    background: url(/img/icon/heart.png) 50%, 50%;
+    background: url(../img/icon/heart.png) 50%, 50%;
 }
 .icon-arrows {
-    background: url(/img/icon/arrows.png) 50%, 50%;
+    background: url(../img/icon/arrows.png) 50%, 50%;
 }
 .icon-time { 
-    background: url(/img/icon/time.png) 50%, 50%;
+    background: url(../img/icon/time.png) 50%, 50%;
 }
 .icon-cart {
-    background: url(/img/icon/cart.png) 10% , 50%;
+    background: url(../img/icon/cart.png) 10% , 50%;
     width: 166px;
     height: 50px;
     position: relative;
