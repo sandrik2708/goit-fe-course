@@ -106,7 +106,7 @@ margin: 0 auto;
     font-size: 18px;
     width: 255px;
     overflow: hidden;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 } 
 .item:hover .attr {
     color: rgb(255, 255, 255);
@@ -118,10 +118,8 @@ margin: 0 auto;
 }
 
 .item:not(:nth-child(4n+4 )){
-    margin-right: 15px;
-}
-.item:not(:nth-last-child(4n+4)) {
-    margin-left: 15px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .attr {
@@ -194,3 +192,8 @@ background-color: rgb(140, 140, 140);
     border-radius: 5px;
     background: rgb(26,188,156);
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
