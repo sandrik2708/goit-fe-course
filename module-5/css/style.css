@@ -145,7 +145,7 @@ background-color: rgba(26, 188, 156, 1);
 .card-list ul {
     margin: 0 auto;
     padding: 0; 
-    padding-left: 245px;
+    /* padding-left: 245px; */
 }
 
 .card-list li {
@@ -182,7 +182,8 @@ background-color: rgba(26, 188, 156, 1);
     letter-spacing: -0.36px;
     
 }
-.card:last-child {
+
+.wrapper li:not(:last-child) {
     margin-right: 30px;
 }
 .attr {
@@ -278,7 +279,9 @@ background-color: rgb(26, 188, 156);
     transform: translate(-50%, -50%);
 }
 .icons li {
+    margin-right: 0;
 padding-bottom: 0;
+padding-right: 0;
 }
 .icons li:not(:last-child) {
     margin-bottom: 6px;
