@@ -9,9 +9,7 @@ box-sizing: inherit;
 }
 .page {
     font-family: 'Roboto', sans-serif;
-    width: 100%;
     margin: 0 auto;
-    position: relative;
 }
 .clearfix::after{
     display: table;
@@ -20,7 +18,7 @@ box-sizing: inherit;
 }
 
 .wrap {
-    width: 1125px;
+    width: 1110px;
     margin: auto;
 }
 .logo {
@@ -30,7 +28,7 @@ box-sizing: inherit;
     line-height: 32px;
     text-transform: uppercase;
     color: rgb(85, 82, 82);
-   
+   padding-top: 32px;
 }
 .logo::first-letter {
     font-weight: 600;
@@ -45,7 +43,7 @@ box-sizing: inherit;
     float: right;
  margin: 0;
  padding: 0;
- margin-top: 8px;
+ /* margin-top: 8px; */
  }
 
 .menu li{
@@ -59,27 +57,33 @@ box-sizing: inherit;
     text-decoration: none;
     display: block;
     color: rgb(0, 0, 0);
+    padding: 40px 0;
 }
 .menu a:hover{
     color: rgb(26, 188, 156);
 }
 .container {
     margin: 0 auto;
-    width: 1600px;
+    max-width: 1600px;
     height: auto;
+    background-color: rgb(233, 240, 253);
 }
 .slide {
     background-image: url(../img/slide/slide.jpg);
     margin: 0 auto;
+    background-repeat: no-repeat;
     min-height: 600px;
     width: 100%;
     position: relative;   
+    /* margin-bottom: 100px; */
+    box-sizing: content-box;
+    padding-bottom: 100px;
 }
 .bg {
     background-color: rgba(0,0,0, 0.5);
     min-height: 600px;
     position: absolute;
-    width: 100%;
+    width: 1600px;
     
 }
 .text-slide { 
@@ -133,29 +137,30 @@ background-color: rgba(26, 188, 156, 1);
 
 .card-list { 
     text-transform: uppercase;
-    background-color: rgb(233, 240, 253);
+    /* background-color: rgb(233, 240, 253); */
     position: relative;
     margin: 0 auto;
-    height: 676px;
+   
 }
 .card-list ul {
-    margin: 0 ;
-    padding: 0;
-    position: absolute;
-    left: 245px;
+    margin: 0 auto;
+    padding: 0; 
+    padding-left: 245px;
 }
 
 .card-list li {
     float: left;
     list-style: none;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 .card-list h2 { 
     margin: 0 ;
     text-align: center;
     font-size: 48px;
     line-height: 32px;
-    padding-top: 100px;
+    /* margin-bottom: 110px; */
+    padding-bottom: 110px;
     color: rgb(81, 81, 81);
     }
     .card-list h2::after {
@@ -164,7 +169,7 @@ background-color: rgba(26, 188, 156, 1);
         width: 165px;
         margin: 0  auto;
         margin-top: 30px;
-        margin-bottom: 80px;
+        /* margin-bottom: 80px; */
         border-bottom: 7px solid rgb(26, 188, 156);
     }
     
@@ -175,6 +180,7 @@ background-color: rgba(26, 188, 156, 1);
     color: rgb(255, 255, 255);
     font-weight: 600;
     letter-spacing: -0.36px;
+    
 }
 .card:last-child {
     margin-right: 30px;
@@ -226,8 +232,8 @@ background-color: rgb(26, 188, 156);
     text-decoration: none;
     font-family: "OpenSans", sans-serif;
     font-size: 14px;
-    color: rgb(254, 254, 254);
-    display: inline-block;
+    color: #fefefe;
+    display: block;
     border: 1px solid rgb(254, 254, 254);
     text-align: center;
     background-repeat: no-repeat;
@@ -272,8 +278,7 @@ background-color: rgb(26, 188, 156);
     transform: translate(-50%, -50%);
 }
 .icons li {
-    list-style: none;
-
+padding-bottom: 0;
 }
 .icons li:not(:last-child) {
     margin-bottom: 6px;
@@ -301,6 +306,7 @@ background-color: rgb(26, 188, 156);
     text-align: center;
     text-transform: capitalize;
     position: relative;
+    bottom: 0;
 }
 .ftr-info {
     position: absolute;
