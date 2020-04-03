@@ -309,26 +309,19 @@ padding-right: 0;
     line-height: 28px;
     text-align: center;
     text-transform: capitalize;
-    position: relative;
+    /* position: relative; */
     bottom: 0;
 }
 .ftr-info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
+    margin: 0 auto;
+    padding-top: 30px;
 }
 .ftr p {
     margin: 0; 
-    position: absolute;
-    left: 0;
-    white-space: nowrap;
+    display: inline-block;
 }
   .ftr a {
-    position: absolute;
     display: inline-block;
-    right: 0;
     color:rgb(59, 190, 160) ;
     text-decoration: none;
   }
