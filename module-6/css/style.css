@@ -24,7 +24,8 @@ margin-bottom: 140px;
     font-size: 30px;
     font-weight: 700;
     color: rgb(149, 225, 211);
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    padding-bottom: 25px;
 }
 .navigation-menu {
     display: flex;
@@ -36,18 +37,39 @@ margin-bottom: 140px;
 .navigation ul {
     margin: 0;
     padding: 0;
+    margin-top: 40px;
 }
 .navigation-menu a {
     color: rgb(149, 225, 211);
     font-size: 14px;
     font-weight: 500;
     /* padding-bottom: 12px; */
-    transition: 200ms;
+    transition-duration: 0.2s;
+}
+.navigation-menu li::after {
+    content: "";
+    display: block;
+    /* padding-bottom: 12px; */
+    padding-bottom: 12px;
+    border-bottom: 3px solid rgb(243, 129, 129);
+}
+.navigation-menu li::after {
+    content: "";
+    display: block;
+    width: 0;
+    padding-top: 12px;
+    transition-duration: 0.2s;
+    /* border-bottom: 3px solid rgb(243, 129, 129); */
+}
+.navigation-menu li:hover::after{
+    transition-duration: 0.2s;
+    width: 100%;
+    border-bottom: 3px solid rgb(243, 129, 129);
 }
 .navigation-menu a:hover {
     color: rgb(243, 129, 129);
-    border-bottom: 3px solid ;
-  transition: 200ms;
+    /* border-bottom: 3px solid ; */
+  transition-duration: 0.2s;
 }
 .container { 
     max-width: 1200px;
