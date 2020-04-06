@@ -10,7 +10,7 @@ box-sizing: inherit;
 .hat { 
 margin: 0 auto;
 font-family: 'Montserrat', sans-serif;
-margin-bottom: 140px;
+padding-bottom: 140px;
 }
 
 .container-hat {
@@ -150,6 +150,7 @@ margin-bottom: 100px;
 }
 .team {
     display: flex;
+    padding-bottom: 80px;
 }
 .team-info {
     margin-bottom: 95px;
