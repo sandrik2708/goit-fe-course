@@ -74,6 +74,7 @@ box-sizing: inherit;
 }
 .hat a {
     text-decoration: none;
+    display: block
 }
 .logo {
     font-family: 'League Script', sans-serif;
@@ -84,10 +85,7 @@ box-sizing: inherit;
 .navigation-menu {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 41px;
+    
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -97,12 +95,15 @@ box-sizing: inherit;
     
 }
 .navigation-menu a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 41px;
     color: rgb(34, 34, 34);
 }
 .navigation-menu a:hover {
     color: rgb(254, 209, 54);
 }
-
 .section-services {
     padding-top: 130px;
     padding-bottom: 120px;
@@ -110,21 +111,22 @@ box-sizing: inherit;
 .caption {
     margin: 0 auto;
     text-align: center;
-    font-style: 40px;
+    font-size: 40px;
+    line-height: 48px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 80px;
 }
 .signature {
     margin: 0 auto;
-    display: block;
     font-family: 'Roboto', sans-serif;
-    /* margin-top: 20px; */
+    text-align: center;
     font-size: 16px;
+    font-weight: 600;
     font-style: italic;
     text-transform: none;
     color: rgb(119, 119, 119);
     margin-top: 25px;
+    margin-bottom: 80px;
 }
 .services {
     margin: 0;
@@ -132,7 +134,6 @@ box-sizing: inherit;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     align-items: center;
     text-align: center;
 }
@@ -188,12 +189,13 @@ box-sizing: inherit;
 .caption-bg {
     color: rgb(255, 255, 255);
 }
-.users-data {
-    min-height: 306px;
-    position: relative;
-    
-}
 
+.wrap{
+    width: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .users-data input[type='text'],
  .users-data input[type='email'],
  .users-data textarea {
@@ -201,50 +203,53 @@ box-sizing: inherit;
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
-    color: rgb(187, 187, 187);
-    position: absolute;
  }
-
  .users-data input[type='text'],
  .users-data input[type='email'] { 
     height: 50px;
     width: 455px;
 }
 .users-data textarea {
-/* align-self: flex-end; */
-resize: none;
-height: 210px;
-width: 455px;
-right: 0;
+    resize: none;
+    height: 210px;
+    width: 455px;
 }
-
-.users-data input[name='subject'] { 
-    top: 160px;
+.style-place-textarea::-webkit-input-placeholder {
+line-height: 20px;
 }
-.users-data input[type='email'] {
-    top: 80px;
+.style-place::-webkit-input-placeholder{
+    text-indent: 15px;
+    color: rgb(187, 187, 187);
+    opacity: 1; 
+    transition: 300ms ease;
 }
-
-.users-data input[name='email'],
-.users-data input[name='name'],
-.users-data textarea:invalid {
+.style-place:focus::-webkit-input-placeholder{ 
+    opacity: 0; 
+    transition: 300ms ease;
+}
+.users-data input[name='email']:invalid:focus,
+.users-data input[name='name']:invalid:focus,
+.users-data textarea:invalid:focus {
     outline: red solid 2px;
 }
-.users-data input[name='email'],
-.users-data input[name='name'],
-.users-data textarea:valid { 
+.users-data input[name='email']:valid:focus,
+.users-data input[name='name']:valid:focus,
+.users-data textarea:valid:focus{ 
     outline: 2px solid green;
 }
-
+.inputs {
+    display: flex;    
+    justify-content: space-between;
+}
 .btn { 
     font-family: 'Montserrat';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate( -50% ,0);
-    /* align-self: center; */
+    align-self: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
     width: 240px;
     height: 65px;
+    text-align: center;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
