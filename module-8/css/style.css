@@ -58,6 +58,7 @@ box-sizing: inherit;
     background-size: cover;
     color: rgb(255, 255, 255);
     padding-bottom: 140px;
+    /* margin-bottom: 70px; */
 }
 
 .header a {
@@ -133,9 +134,12 @@ box-sizing: inherit;
     font-weight: 700;
     max-width: 280px;
 }
+.main{
+    padding-top: 70px;
+}
 .partners-caption { 
     margin: 0 auto;
-    margin-top: 70px;
+    /* margin-top: 70px; */
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 22px;
@@ -145,9 +149,36 @@ box-sizing: inherit;
     padding: 0;
     margin: 0 auto;
 }
+.img {
+    position: relative;
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.img::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 46px;
+}
+.icon-tv::after {
+    background-image: url(../img/icon-tv.png);
+}
+.icon-coffe::after{
+    background-image: url(../img/icon-coffe.png);
+}
+.icon-flask::after{
+    background-image: url(../img/icon-flask.png);
+}
+.icon-paper-plane::after{
+    background-image: url(../img/icon-paper-plane.png);
+}
 .partners-name { 
     font-weight: 700;
-    margin: 25px 0;
+    margin:0;
+    margin-bottom: 25px;
 }
 .partners-description{
     font-family: 'Roboto',sans-serif;
@@ -204,8 +235,14 @@ box-sizing: inherit;
         font-size: 24px;
         margin-bottom: 40px;
     }
+    .partners-link{
+        max-width: 224px;
+    }
+    .main{
+        padding-top: 75px;
+    }
     .partners-caption{
-        margin-top: 75px;
+        /* margin-top: 75px; */
         margin-bottom: 35px;
     }
     .partners-list{
@@ -221,14 +258,15 @@ box-sizing: inherit;
         margin-bottom: 60px;
     }
     .partners-name{
-        margin: 18px 0;
+        /* margin: 18px 0; */
+        margin-bottom: 18px;
     }
     .btn{
         max-width: 192px;
     }
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:960px){
     .header{
         background-image: url(../img/bg.jpg);
     }
