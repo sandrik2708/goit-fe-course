@@ -75,6 +75,11 @@ box-sizing: inherit;
     padding-top: 20px;
     margin-bottom: 115px;
 }
+.menu-list { 
+    display: inline-block;
+    max-width: 90px;
+    margin: 0 auto;
+}
 .menu-list a{
     border: solid 2px transparent;
     border-radius: 30px;
