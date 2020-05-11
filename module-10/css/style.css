@@ -146,16 +146,16 @@ font-size: 72px;
     text-transform: uppercase;
     padding: 12px 0 ;
 }
-.section__services{
+.services{
     padding-top: 50px;
 }
-.main__title {
+.section__title {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     margin-bottom: 90px;
     color: rgb(51, 51, 51);
 }
-.main__prefix {
+.section__title--cursive {
     font-size: 24px;
     margin-bottom: 24px;
 }
@@ -207,25 +207,25 @@ margin-bottom: 100px;
     background-repeat: no-repeat;
     width: 32px;
 }
-.photography::before { 
+.services__item--photography::before { 
     background-image: url(../img/service/alarm.png) ;
 }
-.web-design::before{
+.services__item--web-design::before{
     background-image: url(../img/service/graph.png);
 }
-.creativity::before {
+.services__item--creativity::before {
     background-image: url(../img/service/computer.png);
 }
-.seo::before {
+.services__item--seo::before {
     background-image: url(../img/service/book.png);
 }
-.css-html::before {
+.services__item--css-html::before {
     background-image: url(../img/service/home.png);
 }
-.digital::before {
+.services__item--digital::before {
     background-image: url(../img/service/digital.png);
 }
-.section__team {
+.team {
     padding-bottom: 80px;
 }
 .team__text {
@@ -309,8 +309,6 @@ margin-bottom: 100px;
 }
 .social-list__item {
     display: inline-block;
-   
-  
 }
 .social-list__link  {
     display: inline-block;
@@ -371,7 +369,7 @@ margin: 0 auto;
     font-weight: 500;
     padding-top: 16px;    
 }
-.main__title--underline::after {
+.section__title--underline::after {
     content: "";
     display: block;
     margin: 0 auto;

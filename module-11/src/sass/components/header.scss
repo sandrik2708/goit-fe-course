@@ -1,0 +1,41 @@
+.header{
+    margin: 0 auto;
+font-family:$font-primary;
+    &--bg{
+        background-image: url(../../images/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &--gradient{
+        background-image: $color-header--gradient;
+        padding-bottom: 230px;
+        padding-top: 25px;
+    }
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx){
+    .header--bg{
+        background-image: url(../../images/bg@2x.jpg);
+    }
+}
+
+.header__title {
+    font-size: 150px;
+    color:$color-header-primary;
+    line-height: 140px;
+    margin-bottom: 120px;
+}
+
+.header__prefix {
+    color:$color-header-primary;
+    font-size: 72px;
+    }
+
+.welcome__link {
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid $color-header-primary;
+    max-width: 160px;
+    padding: 12px 0 ;
+    @extend %btn;
+}

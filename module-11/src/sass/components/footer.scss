@@ -1,0 +1,38 @@
+.ftr {
+    margin: 0 auto;
+    border-top: 1px solid $color-ftr-primary;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center;
+    }
+    .ftr__link {
+        text-decoration: none;
+        display: inline-block;
+        color: $color-icon-svg;
+    }
+    .ftr__text {
+        font-size: 15px;
+        line-height: 24px;
+        color: $color-primary-text;
+        font-family: $font-primary;
+        font-weight: 500;
+        padding-top: 16px;    
+    }
+    .ftr__form {
+        padding-top: 10px;
+    }
+    .form__email{
+        height: 40px;
+    
+    }
+    .ftr__btn {
+        font-family: 'Montserrat', sans-serif;  
+        background-color: rgb(149,225,221);
+        border: 0;
+        padding: 0;
+        height: 40px;
+        width: 150px;
+        @extend %btn;
+    }
+    
